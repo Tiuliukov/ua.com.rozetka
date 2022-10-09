@@ -10,14 +10,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ua.com.rozetka.main" />
-    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.codeborne:selenide:6.8.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.9.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.codeborne:selenide-core:6.8.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:4.4.0" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.1.2" level="project" />
     <orderEntry type="library" name="Gradle: io.github.bonigarcia:webdrivermanager:5.3.0" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:4.4.0" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-devtools-v102:4.4.0" level="project" />
@@ -89,8 +89,8 @@
     <orderEntry type="library" name="Gradle: io.opentelemetry:opentelemetry-sdk-metrics:1.16.0" level="project" />
     <orderEntry type="library" name="Gradle: io.opentelemetry:opentelemetry-sdk-logs:1.16.0-alpha" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-io:commons-io:2.11.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.commons:commons-compress:1.21" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="ua.com.rozetka.main" />
