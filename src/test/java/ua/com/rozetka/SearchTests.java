@@ -1,16 +1,36 @@
 package ua.com.rozetka;
 
+import com.codeborne.selenide.Condition;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import javax.naming.directory.SearchResult;
+
+import static com.codeborne.selenide.Selenide.*;
 
 
 public class SearchTests {
-    @Test
-    void searchProductByTitle(){
+    @BeforeEach
+    void openHomePage(){
         open("https://rozetka.com.ua");
-        $("[name='search']").val("Мобільний телефон Apple iPhone 13 Pro Max 1TB Graphite");
+    }
+    @Test
+    void searchProductByTitleAndAddToCart (){
+        var productName = "Мобільний телефон Apple iPhone 13 Pro Max 1TB Graphite (MLLK3HU/A)";
+        var dataGoodsId = "318463612";
+        $("[name='search']").val(productName).pressEnter();
+        $(".product__title").shouldHave(Condition.text(productName));
+        $(".toOrder [aria-label='Купити']").click();
+        $(".modal__content").shouldHave(Condition.text(productName));
+        sleep(3000);
     }
 
+    @Test
+    void searchProductByTitleTest () {
+        var productName = "Мобільний телефон Apple iPhone 13 Pro Max 1TB Graphite (MLLK3HU/A)";
+        new HomePage().searchFor(productName);
+        var actualSearchResultTitle = new SearchResultPage().getSearchResultTitle();
+        Assertions.assertEquals(productName, actualSearchResultTitle );
+    }
 }
