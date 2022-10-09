@@ -13,4 +13,4 @@ public class SearchTests {
         $("[name='search']").val("Мобільний телефон Apple iPhone 13 Pro Max 1TB Graphite");
     }
 
-} 
+}
