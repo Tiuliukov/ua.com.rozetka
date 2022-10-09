@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'ua.com.rozetka'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.9.0'
+}
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
+    testImplementation 'com.codeborne:selenide:6.8.1'
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+}
+
+test {
+    useJUnitPlatform()
+}
