@@ -10,10 +10,10 @@ import javax.naming.directory.SearchResult;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class SearchTests {
+public class SearchTests extends BaseTest  {
     @BeforeEach
     void openHomePage(){
-        open("https://rozetka.com.ua");
+        open("/");
     }
     @Test
     void searchProductByTitleAndAddToCart (){
@@ -33,4 +33,5 @@ public class SearchTests {
         var actualSearchResultTitle = new SearchResultPage().getSearchResultTitle();
         Assertions.assertEquals(productName, actualSearchResultTitle );
     }
+
 }
